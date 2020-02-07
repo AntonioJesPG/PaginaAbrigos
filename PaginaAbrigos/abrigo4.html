@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+      <title>Abrigo4</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="Content-Type" content="text/html"/>
+      <meta name="keywords" content="Abrigos, coffe, tienda" />
+      <meta name="description" content="Uno de los muchos abrigos que oferta coffe shop abrigo" />
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body >
+      <div class="topnav">
+        <img class="imgLogo2" src="../imagesAbrigo/logo1.png"/>
+        <div class="topnav2">
+            <a href="index.html">Inicio</a>
+            <a href="login.html">Usuario</a>
+            <a href="cesta.html">Cesta</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </div>
+       
+
+  <div class="abrigo">
+
+        <!-- Slideshow container -->
+<div class="contenedor">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="parteImagen">
+        <div class="mySlides fade">
+          <img class="imagenContenedor" src="../imagesAbrigo/resized/abrigo4-1.png">
+        </div>
+      
+        <div class="mySlides fade">
+
+          <img class="imagenContenedor" src="../imagesAbrigo/resized/abrigo4-2.png">
+
+        </div>
+      
+        <div class="mySlides fade">
+
+          <img class="imagenContenedor" src="../imagesAbrigo/resized/abrigo4-3.png">
+
+        </div>
+      <!-- The dots/circles -->
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div> 
+    </div>
+  <div class="parteTexto">
+    <div class="tituloAbrigo">
+      Abrigo Reaper Negro 
+    </div>
+
+    <div class="opcionesAbrigo">
+
+      <label for="select">Tallas</label>  
+
+      <select name="select" id="select">
+        <option value="1">XS</option>
+        <option value="2">S</option>
+        <option value="3">M</option>
+        <option value="4">L</option>
+        <option value="5">XL</option>
+        <option value="6">XXL</option>
+        <option value="7">XXXL</option>
+    </select>
+
+    <div class="botonesColores">
+      <button class="estiloBoton">Negro</button>
+      <button class="estiloBoton">Blanco</button>
+      <button class="estiloBoton">Azul</button>
+    </div>
+
+    </div>
+
+    <div class="compra">
+
+      <p class="precio2">Precio:1270€</p>
+
+      <div class="boton">
+        <button class="estiloBoton">Comprar</button>
+      </div>
+    </div>
+</div>
+</div>
+
+              <script type="text/javascript">
+                 var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";
+                      dots[slideIndex-1].className += " active";
+                    } 
+              </script>
+  <div class="descAbrigo">
+
+    <div class="listas">
+      <h2>Instrucciones de lavado</h2>
+      <ol>
+        <li>Darle la vuelta</li>
+        <li>Usar agua fria</li>
+        <li>Utilizar un centrifugado suave</li>
+      </ol> 
+
+      <h2>Características del abrigo</h2>
+      <ul>
+        <li>Exterior: 80% poliéster, 20% lana</li>
+        <li>Relleno: 100% poliéster</li>
+        <li>Bolsillos: Bolsillo interior</li>
+        <li>Detalles: Bolsillos verticales, tira de botones</li>
+        <li>DNúmero de artículo: OS322T047-Q11</li>
+      </ul>  
+    </div>
+
+    <div class="contenedorVideo">
+      <iframe class="videoYoutube"src="https://www.youtube.com/embed/agjCeOlA9z8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+      </iframe>
+    </div>
+
+  </div>
+              
+</div>        
+
+<footer class="footer">
+  <div class="social-wrapper">
+    <ul>
+      <li>
+          <img src="../imagesAbrigo/twitter.png" class="twitter-icon"></a>
+      </li>
+      <li>
+          <img src="../imagesAbrigo/insta.png"  class="instagram-icon"></a>
+      </li>
+      <li>
+          <img src="../imagesAbrigo/face.png" class="facebook-icon"></a>
+      </li>
+      <li>
+          <img src="../imagesAbrigo/gemas.png" class="googleplus-icon"></a>
+      </li>
+      <li>
+          <img src="../imagesAbrigo/youtube.png" class="youtube-icon"></a>
+      </li>
+    </ul>
+  </div>
+</footer>
+            
+    </body>
+    </html>
